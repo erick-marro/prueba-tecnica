@@ -1,6 +1,7 @@
 import 'package:fibonacci/Calculator/services/MatrixService.dart';
 import 'package:fibonacci/Calculator/ui/widgets/fibonacci_form.dart';
 import 'package:fibonacci/Calculator/ui/widgets/fibonacci_table.dart';
+import 'package:fibonacci/Calculator/ui/widgets/total_matrix.dart';
 import 'package:fibonacci/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -34,7 +35,10 @@ class CalculatorScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                FibonacciTable(),
+                const FibonacciTable(),
+                const SizedBox(height: 10.0),
+                const TotalMatrix(),
+                const SizedBox(height: 10.0),
                 const FibonacciForm(),
                 CustomButton(
                   text: "Rotar a la derecha", 
